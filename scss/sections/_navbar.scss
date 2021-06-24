@@ -31,14 +31,12 @@
         padding: 0 0.7rem;
         margin: 0rem 0;
         
-        
-        a.nav-link {
-            // color: $primary !important;
+        a {
             font-size: 1.25rem;
             font-weight: 600;
             z-index: 1;
 
-            &:after {
+            &::after {
                 content: "";
                 position: absolute;
                 transform: translate(-50%, -50%);
@@ -50,9 +48,9 @@
                 transition: width .3s ease-in-out;
             }
     
-            &:hover:after {
+            &:hover::after {
                 width: 75%;
-                color: $gray-600 !important;
+                color: $gray-300 !important;
             }
         }
     }

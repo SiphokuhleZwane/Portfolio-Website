@@ -1,6 +1,6 @@
 @use '../custom' as *;
-// Display 1
 
+// Display 1
 .display-1 {
     
     &--title {
@@ -8,6 +8,7 @@
         text-transform: capitalize;
         font-weight: 600;
 
+        // fading highlight on name
         &:after{
             content: "";
             position: absolute;
@@ -18,4 +19,27 @@
             background-image: linear-gradient(to right, $secondary transparent);
         }
     }
+}
+
+// Display 2
+
+.display-2 {
+    
+  
+        &.display-2--name {
+            font-size: 2.3rem;
+            text-transform: capitalize;
+
+            strong {
+                display: block;
+            }
+        }
+
+        &.display-2--title  {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            background-color: $secondary;
+            padding: 0.3rem 0.5rem; 
+        }
+        
 }
