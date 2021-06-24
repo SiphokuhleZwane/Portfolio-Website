@@ -1,0 +1,59 @@
+@use '../custom' as *;
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1030;
+    background-color: $primary;
+
+    a {
+        position: relative;
+        color: $white !important;
+        text-transform: capitalize;
+
+        &.display-1--title::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 53%;
+            width: 110%;
+            height: 1rem;
+            background-image: linear-gradient(to right, $secondary, transparent);
+            z-index: -1;
+        }
+    }
+
+    li {
+        position: relative;
+        padding: 0 0.7rem;
+        margin: 0rem 0;
+        
+        
+        a.nav-link {
+            // color: $primary !important;
+            font-size: 1.25rem;
+            font-weight: 600;
+            z-index: 1;
+
+            &:after {
+                content: "";
+                position: absolute;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 100%;
+                width: 0;
+                height: 2px;
+                background-color: $secondary;
+                transition: width .3s ease-in-out;
+            }
+    
+            &:hover:after {
+                width: 75%;
+                color: $gray-600 !important;
+            }
+        }
+    }
+}

@@ -1,1 +1,9 @@
 @use 'custom';
+
+// Importing components
+
+@use 'components/typography';
+
+// Importing sections
+
+@use 'sections/navbar';
