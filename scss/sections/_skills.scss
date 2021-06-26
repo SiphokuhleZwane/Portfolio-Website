@@ -1,0 +1,106 @@
+@use '../custom'  as *;
+
+.skills {
+    position: relative;
+    padding: 1rem 0;
+
+    &__content {
+        padding: 1rem;
+        margin-top: 0rem;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 2rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 1rem;
+            }
+        }
+
+        &__icons {
+
+            .icon {
+                margin-right: 0.5rem;
+                font-size: 2rem;
+                color: $primary;
+            }
+        } 
+    }
+
+    &__display {
+        width: 100%;
+        padding: 0 1rem;
+        list-style-type: none;
+
+        li {
+            position: relative;
+            height: 2rem;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            color: $white !important;
+
+            .total {
+                padding: 0.2rem 0.8rem;
+                content: "";
+                width: 100%;
+                border: 1px solid $black;
+                color: $black;
+                background-color: transparent;
+                text-align: end;
+            }
+            
+            .rating {
+                position: absolute;
+                padding: 0.2rem 0.8rem;
+                background-color: rgba($secondary, 1);
+                top: 0;
+                left: 0;
+                height: 100%;
+                z-index: -1;
+               
+                // web develpment ratings 
+                &.html {
+                    width: 85%;
+                }
+                &.css {
+                    width: 70%;
+                }
+                &.js {
+                    width: 65%;
+                }
+                &.bootstrap {
+                    width: 75%;
+                }
+                &.react {
+                    width: 45%;
+                }
+                
+                 // Backend develpment ratings 
+                &.java {
+                    width: 80%;
+                }
+                &.python {
+                    width: 65%;
+                }
+                &.c-sharp {
+                    width: 50%;
+                }
+
+                // storage & version control ratings 
+                &.mysql {
+                    width: 55%;
+                }
+                &.mongoDB {
+                    width: 40%;
+                }
+                &.git {
+                    width: 70%;
+                }
+
+            }
+        }
+    }
+}

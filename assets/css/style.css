@@ -10875,4 +10875,94 @@ textarea.form-control-lg {
   }
 }
 
+.skills {
+  position: relative;
+  padding: 1rem 0;
+}
+.skills__content {
+  padding: 1rem;
+  margin-top: 0rem;
+}
+@media (min-width: 992px) {
+  .skills__content {
+    margin-top: 2rem;
+  }
+}
+.skills__content p {
+  font-size: 0.8rem;
+}
+@media (min-width: 992px) {
+  .skills__content p {
+    font-size: 1rem;
+  }
+}
+.skills__content__icons .icon {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  color: #054d2b;
+}
+.skills__display {
+  width: 100%;
+  padding: 0 1rem;
+  list-style-type: none;
+}
+.skills__display li {
+  position: relative;
+  height: 2rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  color: #fff !important;
+}
+.skills__display li .total {
+  padding: 0.2rem 0.8rem;
+  content: "";
+  width: 100%;
+  border: 1px solid #000;
+  color: #000;
+  background-color: transparent;
+  text-align: end;
+}
+.skills__display li .rating {
+  position: absolute;
+  padding: 0.2rem 0.8rem;
+  background-color: #fd7e14;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+}
+.skills__display li .rating.html {
+  width: 85%;
+}
+.skills__display li .rating.css {
+  width: 70%;
+}
+.skills__display li .rating.js {
+  width: 65%;
+}
+.skills__display li .rating.bootstrap {
+  width: 75%;
+}
+.skills__display li .rating.react {
+  width: 45%;
+}
+.skills__display li .rating.java {
+  width: 80%;
+}
+.skills__display li .rating.python {
+  width: 65%;
+}
+.skills__display li .rating.c-sharp {
+  width: 50%;
+}
+.skills__display li .rating.mysql {
+  width: 55%;
+}
+.skills__display li .rating.mongoDB {
+  width: 40%;
+}
+.skills__display li .rating.git {
+  width: 70%;
+}
+
 /*# sourceMappingURL=style.css.map */
