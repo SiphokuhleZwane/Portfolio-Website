@@ -10775,6 +10775,26 @@ textarea.form-control-lg {
   padding: 0.3rem 0.5rem;
 }
 
+.heading-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #054d2b;
+}
+
+.heading-line::after {
+  content: "";
+  width: 2rem;
+  padding-top: 0.5rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: #054d2b;
+}
+
 .menu {
   position: fixed;
   top: 0;
