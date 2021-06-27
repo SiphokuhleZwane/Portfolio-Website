@@ -1,0 +1,49 @@
+@use '../custom' as *;
+
+.connect {
+    padding: 4rem 0;
+    background-color: $gray-200;
+
+    .connect-info {
+        padding: 2rem;
+        
+        ul {
+            margin-top: 2rem;
+            padding-left: 0rem;
+            font-size: 1.2rem; 
+            
+            a {
+                position: relative;
+                margin-top: 1rem;
+                list-style-type: none;
+                text-decoration: none;
+                
+                .icon {
+                    font-size: 3rem;
+                    padding-right: 1rem;
+                    
+                }
+
+                .link {
+                    position: absolute;
+                    top: 25%;
+                    left: 10%;
+                }
+            }
+        }
+    }
+
+    // Form Content
+
+    .form {
+        padding: 2rem;
+        background-color: white;
+
+        button {
+            border: none;
+            color: $white;
+            text-transform: capitalize;
+            font-size: 1.5rem;
+        }
+    }
+}

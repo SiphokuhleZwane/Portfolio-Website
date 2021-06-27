@@ -11017,4 +11017,42 @@ textarea.form-control-lg {
   margin-top: 0.5rem;
 }
 
+.connect {
+  padding: 4rem 0;
+  background-color: #e9ecef;
+}
+.connect .connect-info {
+  padding: 2rem;
+}
+.connect .connect-info ul {
+  margin-top: 2rem;
+  padding-left: 0rem;
+  font-size: 1.2rem;
+}
+.connect .connect-info ul a {
+  position: relative;
+  margin-top: 1rem;
+  list-style-type: none;
+  text-decoration: none;
+}
+.connect .connect-info ul a .icon {
+  font-size: 3rem;
+  padding-right: 1rem;
+}
+.connect .connect-info ul a .link {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.connect .form {
+  padding: 2rem;
+  background-color: white;
+}
+.connect .form button {
+  border: none;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
